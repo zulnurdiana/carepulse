@@ -54,7 +54,7 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
           </FormControl>
         </div>
       );
-      break;
+
     case FormFieldType.PHONE_INPUT:
       return (
         <FormControl>
@@ -69,14 +69,14 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
           />
         </FormControl>
       );
-      break;
+
     default:
       break;
   }
 };
 
 const CustomFormField = (props: CustomProps) => {
-  const { control, fieldType, name, label, placeholder } = props;
+  const { control, fieldType, name, label } = props;
   return (
     <div>
       <FormField
